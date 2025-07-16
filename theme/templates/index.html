@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeebonnama - Your CV Reimagined</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        .cv-preview {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transform-style: preserve-3d;
+            transition: all 0.3s ease;
+        }
+        .cv-preview:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5ead16a5-b180-4d2f-8eea-720e46f6d3a0.png" alt="Jeebonnama logo - abstract letter J with a modern design" class="h-10 mr-3">
+                <span class="text-xl font-bold text-indigo-700">Jeebonnama</span>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="text-gray-600 hover:text-indigo-600">Home</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-indigo-600">Templates</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-indigo-600">Pricing</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-indigo-600">Blog</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            <div class="flex items-center space-x-4">
+                <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md transition duration-300">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 bg-gradient-to-r from-indigo-50 via-purple-50 to-blue-50">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4 leading-tight">
+                    Craft Your <span class="text-indigo-600">Jeebonnama</span> —<br>Your CV, Reimagined.
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    Professional. Polished. Personal. Built for Deshi and Global ambitions.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md font-medium transition duration-300 flex items-center animate-fade-in w-full sm:w-auto text-center justify-center">
+                        <i class="far fa-file-alt mr-2"></i> Create My CV
+                    </a>
+                    <a href="" class="border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-6 py-3 rounded-md font-medium transition duration-300 flex items-center animate-fade-in w-full sm:w-auto text-center justify-center">
+                        <i class="far fa-eye mr-2"></i> View Templates
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <div class="relative floating">
+                    <div class="cv-preview bg-white p-6 rounded-lg w-full max-w-md mx-auto">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/69f866aa-5715-4a7b-8977-98fd63a64376.png" alt="Live preview of a professional CV template with sections for experience, education and skills" class="rounded-md shadow-inner">
+                    </div>
+                    <div class="absolute -bottom-8 -right-8 bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg shadow-md transform rotate-3">
+                        CV Preview ✨
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3-Step Process -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Build Your Perfect CV in 3 Easy Steps</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition duration-300">
+                    <div class="text-4xl mb-4 text-indigo-600">📌</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Step 1: Tell us your story</h3>
+                    <p class="text-gray-600">Complete our guided form to input your professional details.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition duration-300">
+                    <div class="text-4xl mb-4 text-indigo-600">🎨</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Step 2: Pick a template</h3>
+                    <p class="text-gray-600">Select from our beautiful, ATS-friendly CV templates.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition duration-300">
+                    <div class="text-4xl mb-4 text-indigo-600">📥</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Step 3: Download & Share</h3>
+                    <p class="text-gray-600">Get your CV as PDF or share instantly with employers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Template Carousel -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Popular Templates</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                {% for i in "12345"|make_list %}
+                <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3521d30c-34a0-41c7-b3d4-7e9c7d2ebebe.png" alt="CV template {{ forloop.counter }} - {{ template.description }}" class="w-full h-auto">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                        <a href="#" class="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition duration-300 bg-white text-indigo-600 px-4 py-2 rounded-md font-medium">
+                            Try This
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="text-center mt-10">
+                <a href="" class="text-indigo-600 hover:text-indigo-800 font-medium">Browse All Templates →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Jeebonnama? -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Why Jeebonnama?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="flex items-start">
+                    <div class="text-indigo-600 text-2xl mr-4 mt-1">✅</div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">ATS-Friendly Templates</h3>
+                        <p class="text-gray-600">Our templates are designed to pass through Applicant Tracking Systems with ease.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-indigo-600 text-2xl mr-4 mt-1">🌐</div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Bangla & English Support</h3>
+                        <p class="text-gray-600">Create your CV in both languages to maximize your opportunities.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-indigo-600 text-2xl mr-4 mt-1">📱</div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Mobile Responsive</h3>
+                        <p class="text-gray-600">Edit and view your CV perfectly on any device.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-indigo-600 text-2xl mr-4 mt-1">🔐</div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Private & Secure</h3>
+                        <p class="text-gray-600">Your data remains confidential and under your control.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-indigo-600 text-2xl mr-4 mt-1">✨</div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">For All Professionals</h3>
+                        <p class="text-gray-600">Perfect for students, freelancers, and experienced professionals alike.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-indigo-600 text-2xl mr-4 mt-1">🚀</div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Quick & Easy</h3>
+                        <p class="text-gray-600">Create a professional CV in minutes, not hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">What People Are Saying</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/24280587-50ce-493f-aadc-7e39fd87e174.png" alt="Portrait of Rahim, HR Manager" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Rahim Ahmed</h4>
+                            <p class="text-gray-500 text-sm">HR Manager, Dhaka</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Jeebonnama helped me land interviews at top multinational companies. The templates are perfectly formatted for BD job markets."</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cbe67885-e8ad-400c-b3a9-30f1e799903e.png" alt="Portrait of Fatima, recent graduate" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Fatima Begum</h4>
+                            <p class="text-gray-500 text-sm">Recent Graduate, Chittagong</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"As a fresh graduate, I didn't know how to create a proper CV. Jeebonnama guided me through the process effortlessly."</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cadd106a-311b-4f44-8092-e3560b8cb39b.png" alt="Portrait of Sakib, freelancer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Sakib Hasan</h4>
+                            <p class="text-gray-500 text-sm">Freelancer, Sylhet</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"I use Jeebonnama to create different versions of my CV for various international platforms. Very impressed with the results!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-indigo-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Your future deserves a better CV</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of professionals who've boosted their careers with Jeebonnama</p>
+            <div class="flex justify-center gap-4">
+                <a href="" class="bg-white text-indigo-600 hover:bg-gray-100 px-6 py-3 rounded-md font-medium transition duration-300 flex items-center">
+                    <i class="fas fa-rocket mr-2"></i> Start My Jeebonnama Now
+                </a>
+                <a href="#" class="border-2 border-white text-white hover:bg-indigo-700 px-6 py-3 rounded-md font-medium transition duration-300 flex items-center">
+                    <i class="fas fa-question-circle mr-2"></i> How It Works
+                </a>
+            </div>
+            <div class="mt-8 bg-indigo-700 inline-block px-4 py-2 rounded-full">
+                <i class="fas fa-users mr-2"></i> <span id="cv-counter">8,490</span>+ CVs Created
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/640d8efe-e9b4-4f65-b3c8-94f3fbbd4121.png" alt="Jeebonnama logo in white" class="h-16 mb-4">
+                    <p class="text-gray-300">Your CV, Reimagined. Professional, polished, and personal.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Templates</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Pricing</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">CV Writing Tips</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Interview Guide</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>Made with <i class="fas fa-heart text-red-400"></i> Fahim Bhuiyan</p>
+                <p class="mt-2">© 2025 Jeebonnama. All rights reserved.</p>
+                <div class="mt-4">
+                    <button class="border border-gray-600 px-3 py-1 rounded text-sm">
+                        <i class="fas fa-globe mr-1"></i> English/Bangla
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple counter animation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Start counting to simulate CV creation
+            let count = 8490;
+            const counterElement = document.getElementById('cv-counter');
+            setInterval(() => {
+                count++;
+                counterElement.textContent = count.toLocaleString();
+            }, 10000);
+            
+            // Add any other interactive features here
+        });
+    </script>
+</body>
+</html>
