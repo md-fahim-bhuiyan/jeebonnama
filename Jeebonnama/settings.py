@@ -6,7 +6,7 @@ SECRET_KEY = 'django-insecure-53&+cev6=n+7q$qjf8we)j#)i$b5&v-(qa0rj1jr0yi86+eo51
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jeebonnama.onrender.com', 'localhost', '127.0.0.1']
 
 
 INSTALLED_APPS = [
