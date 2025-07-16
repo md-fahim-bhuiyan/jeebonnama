@@ -1,0 +1,10 @@
+Django>=4.2,<5.0
+psycopg2-binary>=2.9.6        # PostgreSQL adapter
+pillow>=10.0.0                # Image handling (profile photos)
+weasyprint>=59.0              # HTML to PDF converter
+django-tailwind>=4.4.3        # Tailwind CSS integration
+django-crispy-forms>=1.14.0   # Beautiful, DRY forms with Bootstrap5
+crispy-bootstrap5>=0.7         # Bootstrap5 support for crispy forms
+django-browser-reload>=1.3.4  # Hot reload for dev
+gunicorn>=20.1.0              # Production WSGI server
+whitenoise>=6.5.0             # Static files serving in production
